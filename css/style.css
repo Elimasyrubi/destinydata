@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Overpass:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Overpass:200,400,700&display=swap");
 body {
   font-family: "Overpass", sans-serif;
   font-size: 62.5%;
+  background-color: #f4f4f4;
 }
 
 .hero {
@@ -10,7 +11,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 .hero nav a img {
   height: 60px;
@@ -23,9 +24,8 @@ body {
   font-size: 1rem;
 }
 .hero h1 {
-  color: #f4f4f4;
+  color: #221b4b;
   font-size: 2.2rem;
-  margin-top: 0.5rem;
   font-weight: 400;
   text-transform: uppercase;
   font-weight: 700;
@@ -34,9 +34,8 @@ body {
   font-size: 0.8rem;
 }
 .hero .playstore img {
-  width: 12rem;
-  height: auto;
-  margin-bottom: 1rem;
+  width: 7rem;
+  margin: 2rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -50,8 +49,121 @@ body {
   .hero-img {
     max-height: 35rem;
   }
+  .hero .playstore img {
+    width: 10rem;
+    margin: 0 0.2rem;
+  }
 }
-.section2 {
-  height: 20rem;
-  background-color: #a0a0a0;
+/* _____GRID AREA EN HERO_____*/
+.hero-contenido {
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 5rem 1fr 6rem;
+  grid-template-areas: "titulo" "parrafo" "imagen" "botones";
+}
+
+.hero-titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo;
+  margin-top: auto;
+}
+
+.hero-parrafo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: parrafo;
+}
+
+.hero-botones {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: botones;
+}
+
+.hero-imagen {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+}
+
+@media (min-width: 767px) {
+  .hero-contenido {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5rem 1fr;
+    grid-template-areas: "titulo imagen" "parrafo imagen" " botones imagen";
+  }
+  .hero-titulo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .hero-parrafo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .hero-botones {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .hero-imagen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+  }
+}
+.que-es {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f4f4f4;
+}
+.que-es h2 {
+  margin-bottom: 1rem;
+}
+.que-es p {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .que-es {
+    padding-top: 7rem;
+  }
+}
+.servicios {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #d9d9d9;
+}
+.servicios p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.servicios-cajas img {
+  max-width: 5rem;
+  margin: 1rem auto;
+}
+.servicios-cajas h3 {
+  font-size: 1.2rem;
+}
+.servicios-cajas p {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .servicios {
+    padding-bottom: 4rem;
+  }
+  .servicios p {
+    font-size: 1.2rem;
+  }
+  .servicios-cajas {
+    margin-top: 2rem;
+  }
+  .servicios-cajas p {
+    font-size: 1rem;
+  }
 }
