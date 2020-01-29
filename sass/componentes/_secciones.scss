@@ -1,8 +1,16 @@
-//________ SECCION QUE ES________
-.que-es{
+@mixin padding-titulo(
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: $color-blanco;
+)
+@mixin parrafo(
+    font-size: 1rem;
+    font-weight: 200;
+)
+
+//________ SECCION QUE ES________
+
+.que-es{
+    @include padding-titulo;
     h2{
         margin-bottom: 1rem;
     }
@@ -12,6 +20,7 @@
         text-align: justify;
     }
 }
+//Tablet y desktops
 @media (min-width: 768px){
     .que-es{
         padding-top: 7rem;
@@ -19,12 +28,10 @@
 }
 //________SERVICIOS________
 .servicios{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    @include padding-titulo;
     background-color: $color-claro;
     p {
-        font-size: 1rem;
-        font-weight: 200;
+        @include parrafo;
       
     }
     &-cajas {
@@ -36,8 +43,7 @@
             font-size: 1.2rem;
         }
         p {
-            font-weight: 200;
-            font-size: .8rem;
+            @include parrafo;
         }
     }
 }
@@ -51,13 +57,16 @@
         &-cajas {
             margin-top: 2rem;
             p {
-
-                font-size: 1rem;
+                @include parrafo;
             }
         }
     }
-    
-    
 }
 
-//________SERVICIOS________
+//________BENEFICIOS________
+.beneficios{
+    h2{
+
+        color: #790d0d;
+    }
+}
