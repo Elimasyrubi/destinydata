@@ -126,7 +126,15 @@ body {
     -ms-grid-column: 2;
   }
 }
-/* _____GRID AREA EN HERO_____*/
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+.galeria img {
+  max-height: 20rem;
+  margin: 1rem 1rem;
+}
+
 .que-es {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -195,4 +203,63 @@ body {
 }
 .beneficios span {
   color: #00e500;
+}
+
+footer {
+  background-color: #929292;
+}
+footer .contactos form {
+  display: flex;
+  flex-direction: column;
+}
+footer .contactos form input {
+  background-color: #d9d9d9;
+  margin-bottom: 0.5rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  transition: 0.5s;
+}
+footer .contactos form textarea {
+  background-color: #d9d9d9;
+  border-radius: 0.3rem;
+  border: none;
+}
+footer .contactos form textarea:focus, footer .contactos form input:focus {
+  background-color: #f4f4f4;
+  border-color: #221b4b;
+  outline: 0 none;
+  box-shadow: -12px -5px 5px -8px rgba(0, 0, 0, 0.17);
+}
+footer .contactos form button {
+  width: 5rem;
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+footer .contactos form button:hover {
+  background-color: #00e500;
+}
+footer .display-flex {
+  display: flex;
+  flex-direction: column;
+}
+footer .display-flex a {
+  display: flex;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 200;
+  transition: 0.2s;
+}
+footer .display-flex a i {
+  margin-right: 1rem;
+}
+footer .display-flex a:hover {
+  text-decoration: none;
+  color: #00e500;
+}
+footer p {
+  font-size: 1rem;
+  font-weight: 200;
 }

@@ -89,5 +89,14 @@
   }
 
   
-  /* _____GRID AREA EN HERO_____*/
-  
+
+
+  //____GALERIA____
+  .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    img{
+      max-height: 20rem;
+      margin: 1rem 1rem;
+    }
+}
