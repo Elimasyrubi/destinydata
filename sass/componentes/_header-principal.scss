@@ -11,10 +11,10 @@
       height: 60px;
     }
     //logo
-    &-img{
+   /*  &-img{
       max-height: 25rem;
       margin-top: 1rem;
-    }  
+    }   */
     //enlaces
     ul li a{
       font-size: 1rem;
@@ -31,11 +31,6 @@
     p {
       font-size: .8rem;
     }
-    //boton
-    .playstore img{
-      width: 7rem;
-      margin: 2rem 1rem;
-    }
   }
   
   @media (min-width:768px){
@@ -45,12 +40,9 @@
         font-size: 4rem;
         color: $color-secundario;
       }
-      &-img{
-        max-height: 35rem;
-      }  
-      .playstore img{
-        width: 10rem;
-        margin: 0 .2rem;
+      p{
+        font-size: 1rem;
+        font-weight: 200;
       }
     }
   }
@@ -84,7 +76,6 @@
     grid-area: imagen;
   }
 
-
   @media (min-width:767px){
     .hero-contenido{
       grid-template-columns: 1fr 1fr;
@@ -96,3 +87,7 @@
       ;
     }
   }
+
+  
+  /* _____GRID AREA EN HERO_____*/
+  
