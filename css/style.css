@@ -163,7 +163,7 @@ body {
   font-weight: 200;
 }
 .servicios-cajas img {
-  max-width: 5rem;
+  max-width: 7rem;
   margin: 1rem auto;
 }
 .servicios-cajas h3 {
@@ -224,6 +224,7 @@ footer .contactos form textarea {
   background-color: #d9d9d9;
   border-radius: 0.3rem;
   border: none;
+  height: 5rem;
 }
 footer .contactos form textarea:focus, footer .contactos form input:focus {
   background-color: #f4f4f4;
