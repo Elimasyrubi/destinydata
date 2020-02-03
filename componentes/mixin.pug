@@ -6,3 +6,9 @@ mixin caja (imagen,titulo,parrafo)
             img(src="images/"+imagen , alt="")
             h3= titulo
             p= parrafo
+mixin playstore ()
+    .hero-botones
+        a(href="https://play.google.com/store/apps/details?id=com.destinyDatas&hl=es_419").playstore
+            img(src="images/google-play-android.png" alt="Play store Android")
+        a(href="#").playstore
+            img(src="images/apple-store.png" alt="Papple store")
