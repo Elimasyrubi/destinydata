@@ -25,7 +25,7 @@ body {
 
 @media (min-width: 768px) {
   .playstore img {
-    width: 12rem;
+    width: 10rem;
     margin: 2rem 0.2rem;
   }
 }

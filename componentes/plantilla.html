@@ -18,10 +18,10 @@
       <div class="row">
         <div class="col-12 col-md-4 contactos">
           <h5 class="mb-3 text-center text-md-left">Contactanos</h5>
-          <form action="">
-            <input type="email" placeholder=" @email"/>
-            <textarea name="" cols="30" rows="10" placeholder=" message"></textarea>
-            <button>Send</button>
+          <form action="php/enviar2.php" method="post">
+            <input type="email" placeholder=" @email" required="required" name="email"/>
+            <textarea name="mensaje" cols="30" rows="10" placeholder=" message" required="required"></textarea>
+            <button type="submit">Enviar</button>
           </form>
         </div>
         <div class="col-12 col-md-4 display-flex mt-5"><a class="footer-link" href="mailto:destinatedata@gmail.com"><i class="far fa-envelope"></i>
